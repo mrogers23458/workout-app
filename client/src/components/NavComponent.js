@@ -8,15 +8,13 @@ export default function NavComponent () {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <NavDropdown title="Members" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Workouts</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Calories</NavDropdown.Item>
-                        <NavDropdown.Item href="/foods">Foods</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Notes</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Sign Up</NavDropdown.Item>
+                    <Nav.Link href="/workouts">Workouts</Nav.Link>
+                    <Nav.Link href="/workouts">Foods</Nav.Link>
+                    <Nav.Link href="#pricing">Calories</Nav.Link>
+                    <NavDropdown title="Notes" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="/workouts/notes">Workout Notes</NavDropdown.Item>
+                        <NavDropdown.Item href="/foods/notes">Foods Notes</NavDropdown.Item>
+                        <NavDropdown.Item href="/calories/notes">Calories Notes</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

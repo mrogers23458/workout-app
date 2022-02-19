@@ -3,8 +3,8 @@ import NavComponent from './components/NavComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from "./pages/Home";
-import Foods from "./pages/Foods";
 import Login from "./pages/Login";
+import Workouts from "./pages/Workouts";
 
 function App() {
   return (
@@ -13,8 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/foods" element={<Foods />} />
-
+        <Route path="/workouts" element={<Workouts />} />
       </Routes>
     </div>
   );
