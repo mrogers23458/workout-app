@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
+import Login from './pages/Login';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders login page, and elements', () => {
+  render(<Login />);
+  const headerElement = screen.getByText(/Thrive in Chaos Fitness/i);
+  expect(headerElement).toBeInTheDocument();
+  const formEmailLabel = screen.getByLabelText(/E-mail/i)
+  expect(formEmailLabel).toBeInTheDocument(); 
 });
