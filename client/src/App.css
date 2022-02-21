@@ -1,13 +1,19 @@
 .login-box {
   display: flex;
-  flex-direction: column;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 20vh;
   justify-content: center;
   align-items: center;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
+.header-text-box {
+  width: 40vw;
+  margin-right: 10vw;
+}
+
+.header-text {
+  font-size: 6vw;
 }
 
 /* workouts page */
@@ -24,5 +30,28 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
 
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: flex-start;
+  }
+  
+  .header-text-box {
+    display: flex;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+
+  .header-text {
+    font-size: 7vw;
+  }
+}
 

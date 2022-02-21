@@ -4,12 +4,12 @@ const { signToken } = require('../utils/auth.js')
 const resolvers = {
     Query: {
         users: async () => {
-            const users = User.find().populate({path:'posts', populate:{path: 'comments', populate:'commentorId'}}).populate('comments')
+            const users = User.find()
             return users
         },
 
         user: async(parent, {id} ) => {
-            const user = User.findOne({ _id: id }).populate({path:'posts', populate:{path: 'comments', populate:'commentorId'}}).populate({path: 'comments', populate:{path: 'postId'}})
+            const user = User.findOne({ _id: id })
             return user
         }
     },
