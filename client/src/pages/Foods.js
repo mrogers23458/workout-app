@@ -24,7 +24,7 @@ export default function Foods() {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
-                "x-rapidapi-key": "c119c065bcmsh0b9deb1575b0f9fp18332fjsnef8c2094de33"
+                "x-rapidapi-key": ""
             }
         })
 
