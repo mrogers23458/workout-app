@@ -20,17 +20,17 @@ export default function AddWorkout() {
         <div className="add-workout-box">
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicTitle">
-                    <Form.Label>Workout Name</Form.Label>
+                    <Form.Label className="frm-label">Workout Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter Workout Name" />
                 </Form.Group>
             </Form>
                 <div id="exercises" className="exercises-box">
-                    {components.map((item, i) => (<div key={i} id={i}><ExerciseCard  text={item} /><button onClick={() => removeComponent(i)}>remove this</button></div>))}
+                    {components.map((item, i) => (<div key={i} id={i}><ExerciseCard  text={item} /><Button className="remove-btn" onClick={() => removeComponent(i)}>Remove Exercise</Button></div>))}
                 </div>
-                <Button id="add-exercise-btn" variant="primary" onClick={addComponent}>
+                <Button id="add-exercise-btn" className="regButton" variant="primary" onClick={addComponent}>
                     Add Exercise
                 </Button>
-                <Button variant="primary" onClick={removeComponent} type="submit">
+                <Button className="regButton" variant="primary" onClick={removeComponent} type="submit">
                     Create Workout
                 </Button>
         </div>

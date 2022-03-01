@@ -24,7 +24,7 @@ export default function FoodCard(props) {
             const protein = nutrientInfo.PROCNT
 
             return(
-                <Card style={{ width: '18rem' }}>
+                <Card style={{ width: '18rem', marginTop: '2vh' }}>
                 <Card.Img variant="top" src={foodImgSrc} />
                 <Card.Body>
                   <Card.Title>{food.text}</Card.Title>
@@ -40,7 +40,7 @@ export default function FoodCard(props) {
                   <Card.Text>
                     from protein: {protein}
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Add to Calories</Button>
                 </Card.Body>
               </Card>
             )

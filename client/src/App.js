@@ -8,6 +8,7 @@ import Workouts from "./pages/Workouts";
 import Register from "./pages/Register";
 import AddWorkout from "./pages/AddWorkout";
 import Foods from "./pages/Foods";
+import Note from "./pages/WorkoutNote";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/workouts" element={<Workouts />} />
         <Route path="/foods" element={<Foods />} />
         <Route path="/workouts/add" element={<AddWorkout />} />
+        <Route path="/workouts/notes" element={<Note />} />
       </Routes>
     </div>
   );

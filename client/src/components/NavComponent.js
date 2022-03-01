@@ -9,7 +9,7 @@ export default function NavComponent () {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                     <Nav.Link href="/workouts">Workouts</Nav.Link>
-                    <Nav.Link href="/workouts">Foods</Nav.Link>
+                    <Nav.Link href="/foods">Foods</Nav.Link>
                     <Nav.Link href="#pricing">Calories</Nav.Link>
                     <NavDropdown title="Notes" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="/workouts/notes">Workout Notes</NavDropdown.Item>
